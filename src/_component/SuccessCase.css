@@ -1,0 +1,58 @@
+.success-section {
+    margin-top: 160px;
+}
+
+.success-grid {
+    display: grid;
+    gap: 32px;
+    margin-top: 60px;
+}
+
+.success-card {
+    background: #f8f9fa;
+    padding: 40px 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.success-company {
+    background: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.success-card h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.success-card p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.dots {
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+.dots > div {
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #333;
+}

@@ -1,0 +1,30 @@
+.cta-section {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 160px;
+    background: #131313;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    border-radius: 48px 48px 0 0;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 32px;
+}
+
+.cta-section p {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 48px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 48px;
+}

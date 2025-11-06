@@ -1,0 +1,359 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system,
+        BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+        "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic",
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    line-height: 1.4;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.App {
+    width: 100%;
+    height: fit-content;
+}
+
+section {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.highlight {
+    color: #2563eb;
+}
+
+.primary-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.secondary-button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 18px 38px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background: #1d4ed8;
+}
+
+.secondary-button:hover {
+    background: white;
+    color: #000;
+}
+
+.contact-info {
+    color: #ccc;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 반응형 디자인 */
+/* 태블릿 (1024px 이하) */
+@media (max-width: 1024px) {
+    section {
+        max-width: 95%;
+        margin-top: 120px;
+        padding: 0 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 48px;
+        margin-bottom: 28px;
+    }
+
+    .mentor-card {
+        padding: 40px;
+    }
+
+    .pricing-section,
+    .cta-section {
+        padding: 60px 20px;
+    }
+}
+
+/* 모바일 (768px 이하) */
+@media (max-width: 768px) {
+    section {
+        margin-top: 80px;
+        padding: 0 16px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 24px;
+        line-height: 1.3;
+    }
+
+    /* Mentor Section 모바일 */
+    .mentor-card {
+        padding: 32px 24px;
+    }
+
+    .mentor-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 24px;
+    }
+
+    .mentor-image {
+        margin: 0 auto;
+        width: 120px;
+        height: 120px;
+    }
+
+    .mentor-details h3 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .mentor-details li {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .mentor-message {
+        padding: 24px;
+    }
+
+    .mentor-message p {
+        font-size: 18px;
+    }
+
+    /* Success Section 모바일 */
+    .success-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .success-card {
+        padding: 32px 24px;
+    }
+
+    .success-card h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .success-card p {
+        font-size: 16px;
+    }
+
+    /* Pricing Section 모바일 */
+    .pricing-section {
+        margin-left: 16px;
+        margin-right: 16px;
+        padding: 48px 24px;
+    }
+
+    .pricing-card {
+        padding: 40px 24px;
+    }
+
+    .price {
+        font-size: 3rem;
+        margin-bottom: 32px;
+    }
+
+    .feature {
+        font-size: 16px;
+        padding: 12px 0;
+    }
+
+    /* CTA Section 모바일 */
+    .cta-section {
+        padding: 48px 24px;
+    }
+
+    .cta-section h2 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .cta-section p {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 16px 32px;
+        font-size: 18px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        margin: 6px 0;
+    }
+}
+
+/* 작은 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    section {
+        margin-top: 60px;
+        padding: 0 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    /* Mentor Section 작은 모바일 */
+    .mentor-card {
+        padding: 24px 16px;
+    }
+
+    .mentor-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mentor-details h3 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .mentor-details li {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    .mentor-message {
+        padding: 20px;
+    }
+
+    .mentor-message p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Success Section 작은 모바일 */
+    .success-card {
+        padding: 24px 16px;
+    }
+
+    .success-company {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .success-card h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .success-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* Pricing Section 작은 모바일 */
+    .pricing-section {
+        margin-left: 12px;
+        margin-right: 12px;
+        padding: 40px 16px;
+    }
+
+    .pricing-card {
+        padding: 32px 16px;
+    }
+
+    .price {
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+    }
+
+    .currency {
+        font-size: 1.2rem;
+    }
+
+    .feature {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .note {
+        font-size: 12px;
+    }
+
+    /* CTA Section 작은 모바일 */
+    .cta-section {
+        padding: 40px 16px;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .cta-section p {
+        font-size: 16px;
+        margin-bottom: 32px;
+        line-height: 1.5;
+    }
+
+    .primary-button,
+    .secondary-button {
+        max-width: 100%;
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        margin: 4px 0;
+    }
+}

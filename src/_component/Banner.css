@@ -1,0 +1,127 @@
+.banner {
+    width: 100%;
+    position: relative;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-copy {
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.banner-copy > h1 {
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.banner-copy > h1 > span {
+    font-weight: 700;
+}
+.banner-copy > div {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.banner-copy > div > span {
+    font-weight: 700;
+}
+.banner-copy > button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    padding: 12px 28px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.banner-copy > button:hover {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+}
+
+.banner .dimmed {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 1024px) {
+    .banner {
+        height: 600px;
+        padding: 0 40px;
+    }
+    .banner .dimmed {
+        height: 600px;
+    }
+
+    .banner-copy > h1 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 500px;
+        padding: 0 20px;
+    }
+    .banner .dimmed {
+        height: 500px;
+    }
+
+    .banner-copy > h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .banner-copy > div {
+        font-size: 18px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+
+    .banner-copy > button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 450px;
+        padding: 0 16px;
+    }
+    .banner .dimmed {
+        height: 450px;
+    }
+
+    .banner-copy > h1 {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .banner-copy > div {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .banner-copy > button {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 280px;
+    }
+}
