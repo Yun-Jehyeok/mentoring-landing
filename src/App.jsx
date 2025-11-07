@@ -5,6 +5,7 @@ import Pricing from "./_component/Pricing";
 import Problem from "./_component/Problem";
 import Solution from "./_component/Solution";
 import SuccessCase from "./_component/SuccessCase";
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
 
             {/* CTA */}
             <CTA />
+
+            {/* Vercel Analytics */}
+            <Analytics />
         </div>
     );
 }
