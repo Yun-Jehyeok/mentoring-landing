@@ -5,7 +5,7 @@ export default function Pricing() {
         <section className="pricing-section">
             <div className="container">
                 <h2>
-                    월 15만원으로
+                    월 10만원으로
                     <br />
                     <span className="highlight">확실한 취업 준비</span>
                 </h2>
@@ -13,7 +13,7 @@ export default function Pricing() {
                 <div className="pricing-card">
                     <div className="price">
                         <span className="currency">월</span>
-                        <span className="amount">150,000</span>
+                        <span className="amount">100,000</span>
                         <span className="currency">원</span>
                     </div>
 
